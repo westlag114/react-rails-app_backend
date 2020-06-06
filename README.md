@@ -1,24 +1,27 @@
-# README
+# react-rails-app_backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+api を使ったアプリを作れる最小構成のボイラープレートです。
+react-rails-app_client と連携させて使うことを想定しています。
 
-* Ruby version
+## あらかじめ導入されているもの
 
-* System dependencies
+- Rails
+- Mysql
+- rspec-rails
+- pry-byebug
+- rack-cors
 
-* Configuration
+## 使い方
 
-* Database creation
+ローカルにひっぱってきたら
 
-* Database initialization
+```
+docker-compose build
+docker-compose up -d
+docker-compose run web rails db:create
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000
+で立ち上がります。
